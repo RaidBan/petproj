@@ -11,7 +11,7 @@
 					pwd
 					cat /etc/os-release
 					python3 --version
-					python3 print.py
+					python3 main.py
 				'''
 				
 			}
