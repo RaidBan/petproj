@@ -1,0 +1,21 @@
+	pipeline {
+		agent {
+			docker { image 'python:latest' }
+		}
+		stages {
+			stage('Checkout') {
+				steps {
+					sh '''ls -la'''
+					echo 'step Git Checkout'
+				sh '''
+					pwd
+					cat /etc/os-release
+					python3 --version
+					python3 print.py
+				'''
+				
+			}
+		}
+		
+	}
+}
