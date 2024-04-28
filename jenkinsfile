@@ -1,6 +1,6 @@
 	pipeline {
 		agent {
-			docker { image 'python:latest' }
+			docker { image '9411e5c10810' }
 		}
 		stages {
 			stage('Checkout') {
@@ -8,8 +8,8 @@
 					sh '''ls -la'''
 					echo 'step Git Checkout'
 				sh '''
-					pwd
-					cat /etc/os-release
+					ls -la
+					. petproj/bin/activate
 					python3 --version
 					python3 main.py
 				'''
