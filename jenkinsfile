@@ -8,8 +8,7 @@
 					sh '''ls -la'''
 					echo 'step Git Checkout'
 				sh '''
-					pwd
-					cat /etc/os-release
+					ls -la
 					python3 --version
 					python3 main.py
 				'''
