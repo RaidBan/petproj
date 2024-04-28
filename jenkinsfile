@@ -1,6 +1,6 @@
 	pipeline {
 		agent {
-			docker { image 'python:latest' }
+			docker { image '9411e5c10810' }
 		}
 		stages {
 			stage('Checkout') {
