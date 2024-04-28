@@ -9,7 +9,7 @@
 					echo 'step Git Checkout'
 				sh '''
 					ls -la
-					source petproj/bin/activate
+					. petproj/bin/activate
 					python3 --version
 					python3 main.py
 				'''
